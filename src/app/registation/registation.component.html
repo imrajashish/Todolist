@@ -1,0 +1,15 @@
+<div class="container">
+    <div >
+        <br>
+        <input #inputInfo type="text" name="Ashish" value="serch...">
+    </div>
+    <br>
+    <div id="sig">
+        <button  (click) = "getInputInfo(inputInfo)">Sign In</button>
+        <button class="btn btn-success">Sign Up</button>
+    </div>
+    <br>
+    <div>
+        <button *ngIf="isValid" class="sub" (click) = "submit($event)">Submit</button>
+    </div>
+</div> 
