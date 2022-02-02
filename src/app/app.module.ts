@@ -8,10 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { InnertodoComponent } from './innertodo/innertodo.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SubmiteComponent } from './submite/submite.component';
 
 const appRoutes:Routes=[
-  {path:'', redirectTo:'login',pathMatch:'full'},
+  {path:'', redirectTo:'registration',pathMatch:'full'},
   {path:'home',component: HomeComponent},
+  {path:'registration',component: RegistationComponent},
   {path:'innerTodo',component:HomeComponent},
   {path:'**',component:PageNotFoundComponent}
 
@@ -22,7 +24,8 @@ const appRoutes:Routes=[
     RegistationComponent,
     HomeComponent,
     InnertodoComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SubmiteComponent
   ],
   imports: [
     BrowserModule,

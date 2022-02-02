@@ -1,15 +1,15 @@
-<div class="container">
-    <div >
-        <br>
-        <input #inputInfo type="text" name="Ashish" value="serch...">
-    </div>
+<div class="container" >
     <br>
-    <div id="sig">
+    <div *ngIf="show" >
+
         <button  (click) = "getInputInfo(inputInfo)">Sign In</button>
         <button class="btn btn-success">Sign Up</button>
+        
+        
+        <input #inputInfo  type="text" placeholder ="search." value="UserName">
+        <br>
+        <input #inputInfo type="text" name="Ashish" value="Password">
     </div>
-    <br>
-    <div>
-        <button *ngIf="isValid" class="sub" (click) = "submit($event)">Submit</button>
-    </div>
+        
 </div> 
+<app-submite [place]="'SignOut'" [singout]="'SignIn'"></app-submite>

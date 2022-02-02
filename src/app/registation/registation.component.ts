@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-registation',
@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registation.component.css']
 })
 export class RegistationComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
@@ -20,5 +19,6 @@ export class RegistationComponent implements OnInit {
 
   }
   isValid:boolean= false;
+  
 
 }
